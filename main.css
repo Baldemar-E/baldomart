@@ -1,0 +1,15 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{
+  height: 100%;
+  align-items: center;
+  background-color: black 
+
+
+}
+.wrapper{
+width: 960px;
+height:auto;
+margin:0 auto;
+}
