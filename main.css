@@ -15,7 +15,7 @@ margin:0 auto;
 }
 header{
   width:100%;
-  height:200px;
+  height:auto;
 }
 h1{
   font-size: 72px;
@@ -23,8 +23,23 @@ font-family: 'Bebas Neue', regular;
   font-style: normal;
   color: #ffedd1;
   text-align:center;
-  text-decoration:none;
 }
 a {
   text-decoration: none;
+  color:inherit;
+}
+a:hover {
+  text-decoration: underline;
+}
+p{
+font-size: 12px;
+font-family: 'Poppins', regular;
+font-style: normal;
+color: #ffedd1;
+text-align:center;
+
+
+}
+nav{
+
 }
