@@ -10,21 +10,74 @@ name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" type="image/png" href="images/favicon.png">
 <body>
 <div class="wrapper">
-<header>
-<h1>
-<a href="index.html">BALDO-MART</a>
-<nav>
+<header id="nothomeheader">
+  <div id="graphic">
+  <a href="index.html"> <img src="images/baldomartgraphic.png" width="80px"></a>
+</div>
+<nav id="aboutbar">
   <ul>
       <li><a href="about.html">about</a></li>
       <li><a href="lyrics.html">lyrics</a></li>
       <li><a href="contact.html">contact</a></li>
       <li><a href="donate.html">donate</a></li>
+    </ul>
 </nav>
-  </h1>
+<div class="row">
+  <div class="column side">
+    <h2>Side</h2>
+    <p> Born and raised in San Antonio, Texas, Baldemar, grew up with a love for music so bad that
+      he decided it was up to him to be the family embarassment and record his first hit single, ''Eating *ss'', in 2015.<br> A brief, but sweet
+      number that would excite his high school class and set the trajectory for his launch into spaced out, home-recording madness.
+    <br> One debut EP, some singles, and a million house shows later, the slightly seasoned, pot-head romantic, is bunkered at home keeping busy
+    with his craft and feeding his feeble mind with academic sustenance.
+    <br>
+    </p>
+  </div>
+  <div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 4</div>
+    <img src="images/pinkshirt.jpg" style="width:100%">
+    <div class="text">Homage to my roots.</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 4</div>
+    <img src="images/cantina.jpg" style="width:100%">
+    <div class="text">Taken by Joel Ramirez at Twin Sisters, September 2019.</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 4</div>
+    <img src="images/bandpic.png" style="width:100%">
+    <div class="text">Taken by Joel Ramirez at Twin Sisters, September 2019. </div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 4</div>
+    <img src="images/purplelive.png" style="width:100%">
+    <div class="text">Taken by Lorelie Salazar at Paper Tiger</div>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  <script src="script.js"></script>
+  </div>
 
 
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+  </div>
+</div>
 
 
-
+<div id="bio">
+<article>
+<p class="biotext">
+</article>
+</div>
 </body>
 </html>

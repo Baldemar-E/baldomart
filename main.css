@@ -4,14 +4,16 @@
 body{
   height: 100%;
   align-items: center;
-  background-color: black
+  background-color: black;
+
 
 
 }
 .wrapper{
-width: 960px;
+  max-width: 1024px;
+width: 100%;
 height:auto;
-margin:0 auto;
+margin:auto;
 }
 header{
   width:100%;
@@ -23,12 +25,12 @@ font-family: 'Bebas Neue', regular;
   font-style: normal;
   color: #ffedd1;
   text-align:center;
-  margin:0 ;
-  pading:0 ;
+  margin:0;
+  padding:0;
 }
 a {
   text-decoration: none;
-  color:inherit;
+  color:#ffedd1;
 }
 a:hover {
   text-decoration: underline;
@@ -44,33 +46,41 @@ margin-top:-10px ;
 
 }
 nav{
-  width: 100%;
+  width: 100%; height:9%;
   text-align: center;
+  padding: 0;
+  margin:0;
 
 }
 nav ul{
   list-style-type:none;
   margin-top:0;
   margin-bottom: 10px;
+  margin-left: 5px;
+margin-right: 5px;
   padding:0;
 }
 
 nav li{
-  display: inline;
+  display:inline-flex;
   font-family:'Poppins', regular;
   font-color:  #ffedd1;
-  font-size: 32px;
+  font-size: 18px;
   text-align: center;
+  margin-left: 3%;
+  margin-right:3%;
+
 }
 nav a:link {
 font-family:'Poppins', regular;  color: #ffedd1;
-margin:30px;
+margin:5px;
 text-align: center;
 
 }
 
 nav a:visited {
 text-decoration: none;
+
 }
 
 nav a:hover {
@@ -80,11 +90,14 @@ text-decoration: underline;
 nav a:active {
   text-decoration: none;
 }
-img {
+#homepic {
+  clear: both;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  align-content: center;
+max-width: 500px;
+text-align: center;
+margin-left: auto;margin-right: auto;
+
+
 }
 p{
   font-size: 15px;
@@ -96,43 +109,52 @@ p{
 }
 footer{
   width: 100%;
-  height:200px;
+  height:20%;
   text-align: center;
+  margin:auto;
+margin-bottom: 2px;
 
 }
 
-footer ul{
+.footerul{
   list-style-type:none;
-  margin-top:0;
+  margin:0;
   padding:0;
 
 }
 footer li{display: inline;
 font-family:'Poppins', regular;
 font-color:  #ffedd1;
-font-size: 32px;
+font-size: 22px;
+
 
 
 }
 .socialbuttons{
   float:left;
 text-align: center;
+margin-left: 3%;
+margin-bottom: auto;
+
 }
 .platform{
   float:right;
   text-align: center;
+  margin-right: 3%;
+margin-bottom: auto;
 }
 .copyright{
   clear: both;
   float:bottom;
 }
 .fa {
-  padding: 20px;
-  font-size: 100px;
-  width: 30px;
+
+  font-size: 32px;
+  width: 10%; height:0;
   text-align: center;
   text-decoration: none;
-  margin: 5px 2px;
+  margin:8px;
+
   border-radius: 50%;
 }
 .fa:hover {
@@ -171,3 +193,135 @@ text-align: center;
   color: #ffedd1;
 }
 /* ------About CSS----------*/
+#nothomeheader{
+  display:block;
+  width: 100%;
+  height:2%;
+
+}
+#aboutbar{
+  width: 100%;
+  text-align: right;
+  margin-top:5px;
+  margin-bottom: 5%;
+
+}
+#graphic{
+  align-content: left;
+  float:left;
+  margin:0px;
+}
+#whohead{
+  float:left;
+  font-size: 48px;
+font-family: 'Poppins', regular;
+  font-style: normal;
+  color: #ffedd1;
+  text-align:left;
+  margin-top:4%;
+  padding:0;
+
+}
+.column{
+  width:30%;
+  float:left;
+
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+
+}
+* {box-sizing: border-box}
+body {font-family: Poppins,regular; }
+.mySlides {display:no;}
+img {vertical-align: middle;
+opacity: .85;}
+
+/* Slideshow container */
+.slideshow-container {
+
+  float:right;
+  max-width: 600px;
+  width:60%;
+  position: relative;
+  margin-top:0;
+  margin-left:1%;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 10px;
+  margin-top: -22px;
+  color: #ffedd1;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #ffedd1;
+  font-size: 15px;
+  margin-bottom:-8%;
+  position: absolute;
+  bottom: 5%;
+  width: 100%;
+  text-align: center;
+  text-shadow: 3px 3px 4px black;
+}
+
+/* Number text (1/4 etc) */
+.numbertext {
+  color: #ffedd1;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+/* The dots/bullets/indicators */
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 600px) {
+  .prev, .next,.text,p  {font-size: 6px
+}
