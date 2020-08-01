@@ -27,41 +27,16 @@ name="viewport" content="width=device-width, initial-scale=1.0">
 </div>
 <h2>Not sure what I'm saying?<br>Here's the lyrics.</h2>
 
+$('#my_select_box').change(function(){
+	$('#my_changing_image').attr('src', $('#my_select_box').val());
+});
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<select id="my_select_box">
+<option value="images/eatinglyrics.jpg">something</option>
+<option value="https://pbs.twimg.com/profile_images/378800000532546226/dbe5f0727b69487016ffd67a6689e75a.jpeg">something else</option>
+</select>
 
-
-
-<<div class="slider">
-
-  <ul>
-
-    <li>
-      <div class="title"><a href="#">Sports Photos</a></div>
-      <img src="http://lorempixel.com/600/360/sports" />
-    </li>
-     <li>
-      <div class="title"><a href="#">Food Photos</a></div>
-       <img src="http://lorempixel.com/600/360/food" />
-    </li>
-     <li>
-       <div class="title"><a href="#">Fashion Frame</a></div>
-       <img src="http://lorempixel.com/600/360/fashion" />
-
-    </li>
-     <li>
-      <div class="title"><a href="#">Animal Pictures</a></div>
-       <img src="http://lorempixel.com/600/360/animals" />
-    </li>
-
-
-  </ul>
-
-
-</div>
-
-
-
-
-
+<img id="my_changing_image" src="http://g-ecx.images-amazon.com/images/G/01/img15/pet-products/small-tiles/23695_pets_vertical_store_dogs_small_tile_8._CB312176604_.jpg" />
 
 
 <footer>
