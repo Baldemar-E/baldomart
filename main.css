@@ -253,6 +253,15 @@ opacity: 1;}
   margin-top:0;
   margin-left:1%;
 }
+.lyrics-container {
+text-align: center;
+  max-width: 600px;
+  height:auto;
+  width:60%;
+  position: relative;
+  margin-left: 20%; margin-right:20%;
+
+}
 
 /* Next & previous buttons */
 .prev, .next {
@@ -339,7 +348,7 @@ h1 {font-size: 35px
 }
 /* On screens that are 706px wide or less, make the columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 706px) {
-  .column, .slideshow-container {
+  .column, .slideshow-container, .lyrics-container {
     width: 100%;
     float:none;
 }
